@@ -1,0 +1,141 @@
+html<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeaneth Yazmin Huerta — Editorial Photographer</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: #0a0a0a; color: #f0f0f0; font-family: 'Georgia', serif; }
+header { padding: 60px 40px 40px; text-align: center; border-bottom: 1px solid #222; }
+header h1 { font-size: 2rem; font-weight: 400; letter-spacing: 0.3em; text-transform: uppercase; color: #f0f0f0; }
+header p { margin-top: 10px; font-size: 0.85rem; letter-spacing: 0.2em; text-transform: uppercase; color: #888; line-height: 2; }
+header a { color: #888; text-decoration: none; letter-spacing: 0.2em; font-size: 0.8rem; text-transform: uppercase; transition: color 0.3s; }
+header a:hover { color: #f0f0f0; }
+nav { display: flex; justify-content: center; gap: 60px; padding: 30px 40px; border-bottom: 1px solid #222; }
+nav a { color: #888; text-decoration: none; letter-spacing: 0.2em; font-size: 0.75rem; text-transform: uppercase; transition: color 0.3s; }
+nav a:hover { color: #f0f0f0; }
+.chapter { padding: 80px 40px 40px; max-width: 1400px; margin: 0 auto; }
+.chapter-title { text-align: center; margin-bottom: 60px; }
+.chapter-title h2 { font-size: 0.75rem; letter-spacing: 0.4em; text-transform: uppercase; color: #555; margin-bottom: 12px; }
+.chapter-title h3 { font-size: 1.4rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: #f0f0f0; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.grid-item { overflow: hidden; cursor: pointer; }
+.grid-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease, opacity 0.3s ease; aspect-ratio: 3/2; }
+.grid-item:first-child { grid-column: span 3; }
+.grid-item:first-child img { aspect-ratio: 16/7; }
+.grid-item img:hover { transform: scale(1.03); opacity: 0.85; }
+.divider { border: none; border-top: 1px solid #222; margin: 80px 40px; }
+.lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; justify-content: center; align-items: center; }
+.lightbox.active { display: flex; }
+.lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
+.lightbox-close { position: fixed; top: 30px; right: 40px; color: #888; font-size: 2rem; cursor: pointer; transition: color 0.3s; background: none; border: none; }
+.lightbox-close:hover { color: #f0f0f0; }
+.lightbox-prev, .lightbox-next { position: fixed; top: 50%; transform: translateY(-50%); color: #888; font-size: 2rem; cursor: pointer; transition: color 0.3s; background: none; border: none; padding: 20px; }
+.lightbox-prev { left: 20px; }
+.lightbox-next { right: 20px; }
+.lightbox-prev:hover, .lightbox-next:hover { color: #f0f0f0; }
+footer { text-align: center; padding: 60px 40px; border-top: 1px solid #222; margin-top: 80px; }
+footer p { color: #555; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; line-height: 2.5; }
+footer a { color: #555; text-decoration: none; transition: color 0.3s; }
+footer a:hover { color: #f0f0f0; }
+@media (max-width: 768px) { header h1 { font-size: 1.3rem; } nav { gap: 30px; } .grid { grid-template-columns: repeat(2, 1fr); } .grid-item:first-child { grid-column: span 2; } .chapter { padding: 60px 20px 20px; } }
+@media (max-width: 480px) { .grid { grid-template-columns: 1fr; } .grid-item:first-child { grid-column: span 1; } }
+</style>
+</head>
+<body>
+<header>
+<h1>Jeaneth Yazmin Huerta</h1>
+<p>Editorial Photographer &nbsp;&mdash;&nbsp; New York City</p>
+<p>Fashion Designer &nbsp;&middot;&nbsp; Pattern Maker &nbsp;&middot;&nbsp; 22+ Years at the House of Carolina Herrera</p>
+<p>A lifetime in fashion, now behind the lens</p>
+<p style="margin-top:16px;"><a href="https://instagram.com/jyhh.photo" target="_blank">@jyhh.photo</a></p>
+</header>
+<nav>
+<a href="#mexico">Mexico</a>
+<a href="#newyork">New York</a>
+<a href="mailto:jyhh6@msn.com">Contact</a>
+</nav>
+<section class="chapter" id="mexico">
+<div class="chapter-title">
+<h2>Chapter 1</h2>
+<h3>Editorial &mdash; Mexico</h3>
+</div>
+<div class="grid">
+<div class="grid-item"><img src="images/chapter1-01.webp" alt="Cook at the grill Mexico"></div>
+<div class="grid-item"><img src="images/chapter1-02.webp" alt="Wide grill Mexico"></div>
+<div class="grid-item"><img src="images/chapter1-03.webp" alt="Jalapeños in blue cazuela"></div>
+<div class="grid-item"><img src="images/chapter1-04.webp" alt="Blue smoke chicken"></div>
+<div class="grid-item"><img src="images/chapter1-05.webp" alt="Deep red chiles"></div>
+<div class="grid-item"><img src="images/chapter1-06.webp" alt="Achiote chicken on grill"></div>
+<div class="grid-item"><img src="images/chapter1-07.webp" alt="Backlit grill with light flare"></div>
+<div class="grid-item"><img src="images/chapter1-08.webp" alt="Two foil packets on grill"></div>
+<div class="grid-item"><img src="images/chapter1-09.webp" alt="Foil packet with bubbling cheese"></div>
+<div class="grid-item"><img src="images/chapter1-10.webp" alt="Roasted onions"></div>
+<div class="grid-item"><img src="images/chapter1-11.webp" alt="Cook at chopping block"></div>
+<div class="grid-item"><img src="images/chapter1-12.webp" alt="Cleaver on wood stump"></div>
+<div class="grid-item"><img src="images/chapter1-13.webp" alt="Hands packaging the order"></div>
+</div>
+</section>
+<hr class="divider">
+<section class="chapter" id="newyork">
+<div class="chapter-title">
+<h2>Chapter 2</h2>
+<h3>Editorial &mdash; New York</h3>
+</div>
+<div class="grid">
+<div class="grid-item"><img src="images/chapter2-01.webp" alt="Flour dusting the chiles"></div>
+<div class="grid-item"><img src="images/chapter2-02.webp" alt="Mid-char chile on flame"></div>
+<div class="grid-item"><img src="images/chapter2-03.webp" alt="Fully blackened chile"></div>
+<div class="grid-item"><img src="images/chapter2-04.webp" alt="Tongs placing meat on tostada"></div>
+<div class="grid-item"><img src="images/chapter2-05.webp" alt="Lettuce toss"></div>
+<div class="grid-item"><img src="images/chapter2-06.webp" alt="Two hands building torta"></div>
+<div class="grid-item"><img src="images/chapter2-07.webp" alt="Guacamole and cotija close-up"></div>
+<div class="grid-item"><img src="images/chapter2-08.webp" alt="Crema drizzle on tostada"></div>
+<div class="grid-item"><img src="images/chapter2-09.webp" alt="Torta on griddle"></div>
+</div>
+</section>
+<footer>
+<p>Jeaneth Yazmin Huerta &nbsp;&mdash;&nbsp; Editorial Photographer</p>
+<p>Fashion Designer &nbsp;&middot;&nbsp; Pattern Maker &nbsp;&middot;&nbsp; 22+ Years at the House of Carolina Herrera</p>
+<p><a href="https://instagram.com/jyhh.photo" target="_blank">@jyhh.photo</a></p>
+<p><a href="mailto:jyhh6@msn.com">jyhh6@msn.com</a></p>
+<p>New York City</p>
+</footer>
+<div class="lightbox" id="lightbox">
+<button class="lightbox-close" id="lightbox-close">&times;</button>
+<button class="lightbox-prev" id="lightbox-prev">&#8592;</button>
+<img src="" alt="" id="lightbox-img">
+<button class="lightbox-next" id="lightbox-next">&#8594;</button>
+</div>
+<script>
+const images = Array.from(document.querySelectorAll('.grid-item img'));
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+let currentIndex = 0;
+images.forEach((img, index) => {
+img.addEventListener('click', () => {
+currentIndex = index;
+lightboxImg.src = img.src;
+lightboxImg.alt = img.alt;
+lightbox.classList.add('active');
+});
+});
+document.getElementById('lightbox-close').addEventListener('click', () => { lightbox.classList.remove('active'); });
+document.getElementById('lightbox-prev').addEventListener('click', () => {
+currentIndex = (currentIndex - 1 + images.length) % images.length;
+lightboxImg.src = images[currentIndex].src;
+});
+document.getElementById('lightbox-next').addEventListener('click', () => {
+currentIndex = (currentIndex + 1) % images.length;
+lightboxImg.src = images[currentIndex].src;
+});
+lightbox.addEventListener('click', (e) => { if (e.target === lightbox) lightbox.classList.remove('active'); });
+document.addEventListener('keydown', (e) => {
+if (e.key === 'Escape') lightbox.classList.remove('active');
+if (e.key === 'ArrowLeft') document.getElementById('lightbox-prev').click();
+if (e.key === 'ArrowRight') document.getElementById('lightbox-next').click();
+});
+</script>
+</body>
+</html>
