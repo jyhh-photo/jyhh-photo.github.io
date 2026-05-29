@@ -21,25 +21,25 @@ nav a:hover { color: #f0f0f0; }
 .chapter-title h3 { font-size: 1.4rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; color: #f0f0f0; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
 .grid-item { overflow: hidden; cursor: pointer; }
-.grid-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease, opacity 0.3s ease; aspect-ratio: 3/2; }
 .grid-item:first-child { grid-column: span 3; }
+.grid-item img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform 0.6s ease, opacity 0.3s ease; aspect-ratio: 4/3; }
 .grid-item:first-child img { aspect-ratio: 16/7; }
 .grid-item img:hover { transform: scale(1.03); opacity: 0.85; }
 .divider { border: none; border-top: 1px solid #222; margin: 80px 40px; }
+footer { text-align: center; padding: 60px 40px; border-top: 1px solid #222; margin-top: 80px; }
+footer p { color: #555; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; line-height: 2.5; }
+footer a { color: #555; text-decoration: none; transition: color 0.3s; }
+footer a:hover { color: #f0f0f0; }
 .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.95); z-index: 1000; justify-content: center; align-items: center; }
 .lightbox.active { display: flex; }
 .lightbox img { max-width: 90vw; max-height: 90vh; object-fit: contain; }
 .lightbox-close { position: fixed; top: 30px; right: 40px; color: #888; font-size: 2rem; cursor: pointer; transition: color 0.3s; background: none; border: none; }
 .lightbox-close:hover { color: #f0f0f0; }
-.lightbox-prev, .lightbox-next { position: fixed; top: 50%; transform: translateY(-50%); color: #888; font-size: 2rem; cursor: pointer; transition: color 0.3s; background: none; border: none; padding: 20px; }
+.lightbox-prev, .lightbox-next { position: fixed; top: 50%; transform: translateY(-50%); color: #888; font-size: 2rem; cursor: pointer; transition: color 0.3s; background: none; border: none; }
 .lightbox-prev { left: 20px; }
 .lightbox-next { right: 20px; }
 .lightbox-prev:hover, .lightbox-next:hover { color: #f0f0f0; }
-footer { text-align: center; padding: 60px 40px; border-top: 1px solid #222; margin-top: 80px; }
-footer p { color: #555; font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; line-height: 2.5; }
-footer a { color: #555; text-decoration: none; transition: color 0.3s; }
-footer a:hover { color: #f0f0f0; }
-@media (max-width: 768px) { header h1 { font-size: 1.3rem; } nav { gap: 30px; } .grid { grid-template-columns: repeat(2, 1fr); } .grid-item:first-child { grid-column: span 2; } .chapter { padding: 60px 20px 20px; } }
+@media (max-width: 768px) { header h1 { font-size: 1.3rem; } nav { gap: 30px; } .grid { grid-template-columns: repeat(2, 1fr); } .grid-item:first-child { grid-column: span 2; } }
 @media (max-width: 480px) { .grid { grid-template-columns: 1fr; } .grid-item:first-child { grid-column: span 1; } }
 </style>
 </head>
@@ -48,19 +48,64 @@ footer a:hover { color: #f0f0f0; }
 <h1>Jeaneth Yazmin Huerta</h1>
 <p>Editorial Photographer &nbsp;&mdash;&nbsp; New York City</p>
 <p>Fashion Designer &nbsp;&middot;&nbsp; Pattern Maker &nbsp;&middot;&nbsp; 22+ Years at the House of Carolina Herrera</p>
-<p>A lifetime in fashion, now behind the lens</p>
 <p style="margin-top:16px;"><a href="https://instagram.com/jyhh.photo" target="_blank">@jyhh.photo</a></p>
 </header>
 <nav>
+<a href="#fashion">Fashion</a>
+<a href="#sports">Sports</a>
 <a href="#mexico">Mexico</a>
 <a href="#newyork">New York</a>
 <a href="mailto:jyhh.photo@gmail.com">Contact</a>
 </nav>
-<section class="chapter" id="mexico">
-<div class="chapter-title">
-<h2>Chapter 1</h2>
-<h3>Editorial &mdash; Mexico</h3>
+<section class="chapter" id="fashion">
+<div class="chapter-title"><h2>Section 1</h2><h3>Editorial &mdash; Fashion</h3></div>
+<div class="grid">
+<div class="grid-item"><img src="images/fashion01.webp" alt="Manhattan Suited crosswalk editorial"></div>
+<div class="grid-item"><img src="images/fashion02.webp" alt="Manhattan Suited walking full length"></div>
+<div class="grid-item"><img src="images/fashion03.webp" alt="Manhattan Suited revolving door night"></div>
+<div class="grid-item"><img src="images/fashion04.webp" alt="Manhattan Suited leaning wall night"></div>
+<div class="grid-item"><img src="images/fashion05.webp" alt="Manhattan Suited leaning wall day profile"></div>
+<div class="grid-item"><img src="images/fashion06.webp" alt="Manhattan Suited stairs low angle"></div>
+<div class="grid-item"><img src="images/fashion07.webp" alt="Manhattan Suited full length sunglasses"></div>
+<div class="grid-item"><img src="images/fashion08.webp" alt="Manhattan Suited revolving door color"></div>
+<div class="grid-item"><img src="images/fashion09.webp" alt="Editorial fashion yellow gel boots"></div>
+<div class="grid-item"><img src="images/fashion10.webp" alt="Editorial fashion interior room portrait"></div>
+<div class="grid-item"><img src="images/fashion11.webp" alt="Editorial fashion yellow gel jumping"></div>
+<div class="grid-item"><img src="images/fashion12.webp" alt="Editorial fashion green gel Fendi sneaker"></div>
 </div>
+</section>
+<hr class="divider">
+<section class="chapter" id="sports">
+<div class="chapter-title"><h2>Section 2</h2><h3>Editorial &mdash; Sports</h3></div>
+<div class="grid">
+<div class="grid-item"><img src="images/sports01.webp" alt="Basketball layup action"></div>
+<div class="grid-item"><img src="images/sports02.webp" alt="Basketball dribble drive black and white"></div>
+<div class="grid-item"><img src="images/sports03.webp" alt="Basketball warm glow cinematic"></div>
+<div class="grid-item"><img src="images/sports04.webp" alt="Soccer wind portrait black and white"></div>
+<div class="grid-item"><img src="images/sports05.webp" alt="Soccer profile wind black and white"></div>
+<div class="grid-item"><img src="images/sports06.webp" alt="Soccer player dark background portrait"></div>
+<div class="grid-item"><img src="images/sports07.webp" alt="Soccer player cupcake black and white"></div>
+<div class="grid-item"><img src="images/sports08.webp" alt="Soccer player running color"></div>
+<div class="grid-item"><img src="images/sports09.webp" alt="Soccer kick two players"></div>
+<div class="grid-item"><img src="images/sports10.webp" alt="Goalkeeper save color"></div>
+<div class="grid-item"><img src="images/sports11.webp" alt="Soccer player laughing wind black and white"></div>
+<div class="grid-item"><img src="images/sports12.webp" alt="Soccer kick back view color"></div>
+<div class="grid-item"><img src="images/sports13.webp" alt="Goalkeeper ready color"></div>
+<div class="grid-item"><img src="images/sports14.webp" alt="Soccer player laughing wind"></div>
+<div class="grid-item"><img src="images/sports15.webp" alt="Soccer player hoodie dark background"></div>
+<div class="grid-item"><img src="images/sports16.webp" alt="Soccer player braid profile smiling"></div>
+<div class="grid-item"><img src="images/sports17.webp" alt="Soccer player face paint rim light"></div>
+<div class="grid-item"><img src="images/sports18.webp" alt="Soccer player headband profile"></div>
+<div class="grid-item"><img src="images/sports19.webp" alt="Night game wide shot"></div>
+<div class="grid-item"><img src="images/sports20.webp" alt="Goalkeeper full dive action"></div>
+<div class="grid-item"><img src="images/sports21.webp" alt="Goalkeeper save fall foliage"></div>
+<div class="grid-item"><img src="images/sports22.webp" alt="Wide game scramble fall foliage"></div>
+<div class="grid-item"><img src="images/sports23.webp" alt="Soccer player rim light profile black and white"></div>
+</div>
+</section>
+<hr class="divider">
+<section class="chapter" id="mexico">
+<div class="chapter-title"><h2>Section 3</h2><h3>Editorial &mdash; Mexico</h3></div>
 <div class="grid">
 <div class="grid-item"><img src="images/chapter1-01.webp" alt="Cook at the grill Mexico"></div>
 <div class="grid-item"><img src="images/chapter1-02.webp" alt="Wide grill Mexico"></div>
@@ -79,10 +124,7 @@ footer a:hover { color: #f0f0f0; }
 </section>
 <hr class="divider">
 <section class="chapter" id="newyork">
-<div class="chapter-title">
-<h2>Chapter 2</h2>
-<h3>Editorial &mdash; New York</h3>
-</div>
+<div class="chapter-title"><h2>Section 4</h2><h3>Editorial &mdash; New York</h3></div>
 <div class="grid">
 <div class="grid-item"><img src="images/chapter2-01.webp" alt="Flour dusting the chiles"></div>
 <div class="grid-item"><img src="images/chapter2-02.webp" alt="Mid-char chile on flame"></div>
@@ -139,3 +181,11 @@ if (e.key === 'ArrowRight') document.getElementById('lightbox-next').click();
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
